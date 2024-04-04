@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hồ sơ xét tuyển cao đẳng trực tuyến</title>
+<style>
+    /* Định dạng CSS cho biểu mẫu */
+    /* Bổ sung CSS theo ý của bạn */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+    }
+    header {
+      background-color: #ff0000;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    nav {
+      background-color: #ff0000;
+      color: #ffffff;
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .logo {
+      background-color: #ff0000;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .logo {
+      flex-grow: 1; /* Phần logo sẽ mở rộng ra nhiều hơn */
+    }
+    nav {
+      flex-grow: 3; /* Phần NAV sẽ mở rộng ra ít hơn */
+    }
+    main {
+      padding: 20px;
+    }
+    form {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #ff0000;
+      margin-top: 0;
+    }
+    h3 {
+      color: #ff0000;
+    }
+    input[type="text"],
+    input[type="date"],
+    input[type="tel"],
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-bottom: 10px;
+      padding: 8px;
+      width: calc(100% - 16px);
+      border: 1px solid #ff0000;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    button {
+      background-color: #ff0000;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #cc0000;
+    }
+    p {
+      color: #ff0000;
+    }
+</style>
+</head>
+<body>
+
+<header>
+  <!-- Phần Header -->
+  <h1>Header</h1>
+</header>
+
+<div class="flex-container">
+  <div class="logo">
+    <!-- Phần Logo -->
+    <h1>LOGO</h1>
+  </div>
+
+  <nav>
+    <!-- Phần NAV -->
+    <ul>
+      <h1>NAV</h1>
+    </ul>
+  </nav>
+</div>
+
+<main>
+  <form>
+    <h2>HỒ SƠ XÉT TUYỂN CAO ĐẲNG TRỰC TUYẾN</h2>
+    <p>Các hàng mục có dấu (*) bắt buộc, bạn vui lòng điền đầy đủ thông tin.</p>
+    
+    <section>
+      <h3>THÔNG TIN CÁ NHÂN</h3>
+      <div>
+        <label for="ho_ten">1. Họ và tên của thí sinh: *</label>
+        <input type="text" id="ho_ten" name="ho_ten" required>
+        <label><input type="radio" name="gioi_tinh" value="Nu"> Nữ</label>
+        <label><input type="radio" name="gioi_tinh" value="Nam"> Nam</label>
+      </div>
+      <div>
+        <label for="ngay_sinh">2. Ngày, tháng và năm sinh: *</label>
+        <input type="date" id="ngay_sinh" name="ngay_sinh" required>
+      </div>
+      <div>
+        <label for="noi_sinh">3. Nơi Sinh: *</label>
+        <input type="text" id="noi_sinh" name="noi_sinh" required>
+      </div>
+      <div>
+        <label for="dan_toc">4. Dân tộc: *</label>
+        <input type="text" id="dan_toc" name="dan_toc" required>
+        <label for="ton_giao">Tôn giáo: *</label>
+        <input type="text" id="ton_giao" name="ton_giao" required>
+      </div>
+      <div>
+        <label for="ho_khau_thuong_tru">5. Hộ khẩu thường trú: *</label>
+        <input type="text" id="ho_khau_thuong_tru" name="ho_khau_thuong_tru" required>
+      </div>
+      <div>
+        <label for="nganh_nghep_THCS">6. Ngành nghềp THCS hoặc THPT hoặc tương đương: *</label>
+        <input type="text" id="nganh_nghep_THCS" name="nganh_nghep_THCS" required>
+      </div>
+      <div>
+        <label for="nam_tot_nghiep">7. Năm tốt nghiệp THCS hoặc THPT hoặc tương đương:</label>
+        <input type="text" id="nam_tot_nghiep" name="nam_tot_nghiep">
+      </div>
+      <div>
+        <label for="so_CMND">8. Số CMND/ Thẻ căn cước công dân: *</label>
+        <input type="text" id="so_CMND" name="so_CMND" required>
+      </div>
+      <div>
+        <label for="ngay_cap_CMND">Ngày cấp: *</label>
+        <input type="date" id="ngay_cap_CMND" name="ngay_cap_CMND" required>
+        <label for="noi_cap_CMND">Nơi cấp: *</label>
+        <input type="text" id="noi_cap_CMND" name="noi_cap_CMND" required>
+      </div>
+      <div>
+        <label for="dia_chi">9. Địa chỉ gửi giấy báo nhập học vào học cơ sở, theo địa chỉ nào? *</label>
+        <input type="text" id="dia_chi" name="dia_chi" required>
+        <label for="dien_thoai_buoi">Số Điện Thoại (bắt buộc): *</label>
+        <input type="tel" id="dien_thoai_buoi" name="dien_thoai_buoi" required>
+      </div>
+      <div>
+        <label for="dien_thoai_phu_huynh">Số Điện Thoại Phụ Huynh:</label>
+        <input type="tel" id="dien_thoai_phu_huynh" name="dien_thoai_phu_huynh">
+      </div>
+    </section>
+    
+    <!-- Phần Ngành đăng ký xét tuyển -->
+    <section>
+      <h3>NGÀNH ĐĂNG KÝ XÉT TUYỂN</h3>
+      <div>
+        <input type="checkbox" id="digital_marketing" name="nganh_dang_ky" value="Digital Marketing">
+        <label for="digital_marketing">Digital Marketing</label><br>
+        <!-- Thêm các mục khác tương tự -->
+        <input type="checkbox" id="quan_tri_khach_san" name="nganh_dang_ky" value="Quản trị khách sạn">
+        <label for="quan_tri_khach_san">Quản trị khách sạn</label><br>
+        <input type="checkbox" id="công_nghệ_thông_tin" name="nganh_dang_ky" value="Công nghệ thông tin">
+        <label for="công_nghệ_thông_tin">Công nghệ thông tin</label><br>
+        <input type="checkbox" id="ngôn_ngữ" name="nganh_dang_ky" value="Ngôn ngữ">
+        <label for="ngôn_ngữ">Ngôn ngữ</label><br>
+        <input type="checkbox" id="thiết_kế_đồ_họa" name="nganh_dang_ky" value="Thiết kế đồ họa">
+        <label for="thiết_kế_đồ_họa">Thiết kế đồ họa</label><br>
+        <input type="checkbox" id="chăm_sóc_sắc_đẹp" name="nganh_dang_ky" value="Chăm sóc sắc đẹp">
+        <label for="chăm_sóc_sắc_đẹp">Chăm sóc sắc đẹp</label><br>
+        <input type="checkbox" id="quản_trị_doanh_nghiệp" name="nganh_dang_ky" value="Quản trị doanh nghiệp">
+        <label for="quản_trị_doanh_nghiệp">Quản trị doanh nghiệp</label><br>
+        <input type="checkbox" id="quan_ly_cong_nghiep" name="nganh_dang_ky" value="Quản Lý Công Nghiệp">
+        <label for="quan_tri_khach_san">Quản lý công nghiệp</label><br>
+        <input type="checkbox" id="tai_chinh_dau_tu" name="nganh_dang_ky" value="Tài Chính Đầu Tư">
+        <label for="quan_tri_khach_san">Tài Chính Đầu Tư</label><br>
+        <!-- Tiếp tục thêm các mục khác -->
+      </div>
+      <p>Tôi cam đoan những lời khai trên đây là đúng sự thật, nếu sai tôi chịu xử lý theo Quy chế tuyển sinh.</p>
+    </section>
+    
+    <!-- Các phần khác của biểu mẫu có thể bổ sung tại đây -->
+    
+    <button type="submit">Đăng Ký</button>
+  </form>
+</main>
+
+</body>
+</html>
